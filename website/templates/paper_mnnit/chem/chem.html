@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% extends "paper_mnnit/base.html" %}
+  {% block body_block %}
+  {% load static %}
+      <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+          	<section id="team" class="team">
+    	      	<div class="container" data-aos="fade-up">
+    		      	<div  data-aos="fade-up" data-aos-delay="150">
+    		            <h1>Chemistry</h1>
+    		      	</div>
+    	      	</div>
+
+    	        <div class="row">
+
+    	          	<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+    	            	<div class="member" data-aos="fade-up" data-aos-delay="100">
+    	              		<div class="member-img">
+    	                		<img src="{% static "images/paper1.jpg" %}" class="img-fluid" alt="">
+    	                	 </div>
+    			             <div class="member-info">
+    			                <h4><a href="{% url 'paper_mnnit:chem_papers' %}"> Papers  </a></h4>
+    			             </div>
+    	            	</div>
+    	          	</div>
+
+
+    		         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+    		            <div class="member" data-aos="fade-up" data-aos-delay="200">
+    		              	<div class="member-img">
+    		               		<img src="{% static "images/paper2.jpg" %}" class="img-fluid" alt="">
+    		               	</div>
+    		              	<div class="member-info">
+    		                	<h4><a href="{% url 'paper_mnnit:chem_tutsheets' %}"> Tutorial Sheets </a></h4>
+    		                </div>
+    		            </div>
+    		         </div>
+
+    		         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+    		            <div class="member" data-aos="fade-up" data-aos-delay="300">
+    		              	<div class="member-img">
+    		               	 <img src="{% static "images/book.jpg" %}" class="img-fluid" alt="">
+    		                </div>
+    		              	<div class="member-info">
+    		                	<h4><a href="{% url 'paper_mnnit:chem_books' %}"> Books  </a></h4>
+    		                </div>
+    		            </div>
+    		         </div>
+
+    		         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+    		            <div class="member" data-aos="fade-up" data-aos-delay="400">
+    		              	<div class="member-img">
+    		               		 <img src="{% static "images/note.jpg" %}" class="img-fluid" alt="">
+    		                </div>
+    		              	<div class="member-info">
+    		                	<h4><a href="{% url 'paper_mnnit:chem_notes' %}"> Notes  </a></h4>
+    		              	</div>
+    		            </div>
+    		         </div>
+    	        </div>
+    	    </section>
+        </div>
+      </section><!-- End Team Section -->
+    {% endblock %}

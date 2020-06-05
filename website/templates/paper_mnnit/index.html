@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Paper Factory</title>
+
+  <!-- Favicons -->
+  <link href="{% static "images/logo.png" %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static "css/others/bootstrap.min.css" %}" rel="stylesheet">
+  <link href="{% static "css/others/aos.css" %}" rel="stylesheet">
+  <link href="{% static "css/others/icofont.min.css" %}" rel="stylesheet">
+  <link href="{% static "css/others/remixicons.css" %}" rel="stylesheet">
+  <link href="{% static "css/main_files/style.css" %}" rel="stylesheet">
+  <link href="{% static "css/main_files/component.css" %}" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="{% url 'index' %}">Paper Factory<span>.</span></a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="{% url 'index' %}">Subjects</a></li>
+          <li><a href="{% url 'index' %}">About</a></li>
+          <li><a href="{% url 'index' %}">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div  class="container"  data-aos="fade-up">
+      <style>
+      #hero{
+        background-image: url('{% static 'images/b3.jpg' %}');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+       }
+      </style>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>PAPER FACTORY<span>.</span></h1>
+          <h2>" Exculsively for First Year : By First Year "</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main class="cd-main-content">
+    <div class="container">
+      <div class="section-title">
+        <h2>Subjects</h2>
+        <p>Subjects </p>
+      </div>
+
+
+    <div class="container">
+      <section id="grid" class="grid clearfix">
+
+        <a href="{% url 'paper_mnnit:mathsI' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+            <img src="{% static "images/1.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none" fill="#333"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Mathematics-I</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:mathsII' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+            <img src="{% static "images/2.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="
+            M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Mathematics-II</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:physicsI' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+          <img src="{% static "images/3.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Physics-I</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:physicsII' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+            <img src="{% static "images/4.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Physics-II</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:computer' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+            <img src="{% static "images/5.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Computer</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:chem' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+          <figure>
+            <img src="{% static "images/6.jpg" %}">
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+            <figcaption>
+              <h2>Chemistry</h2>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="{% url 'paper_mnnit:wk' %}"  data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+            <figure>
+              <img src="{% static "images/7.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>Workshop</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="{% url 'paper_mnnit:ed' %}"  data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+            <figure>
+              <img src="{% static "images/8.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>Engineering Drawing</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="{% url 'paper_mnnit:mechanics' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z" style="margin-right: 1px;">
+            <figure>
+              <img src="{% static "images/9.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>Engineering Mechanics</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="{% url 'paper_mnnit:eng' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+            <figure>
+              <img src="{% static "images/10.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>English Language And Composition</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="{% url 'paper_mnnit:csw' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+            <figure>
+            <img src="{% static "images/11.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none" fill="#333"><path d="M0,0C0,0,0,182,0,182C0,182,90,126.5,90,126.5C90,126.5,180,182,180,182C180,182,180,0,180,0C180,0,0,0,0,0C0,0,0,0,0,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>Communication Skill Workshop</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="{% url 'paper_mnnit:eco' %}" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z" style="margin-left: -1px;">
+            <figure>
+              <img src="{% static "images/12.jpg" %}">
+              <svg viewBox="0 0 180 320" preserveAspectRatio="none" fill="#333"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "></path><desc>Created with Snap</desc><defs></defs></svg>
+              <figcaption>
+                <h2>Ecology</h2>
+              </figcaption>
+            </figure>
+          </a>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+ <!-- Animation code for flipping -->
+    <script src="{% static "js/snap.svg-min.js.download" %}"></script>
+    <script src="{% static "js/jquery.min.js.download" %}"></script>
+    <script>
+      (function() {
+
+        function init() {
+          var speed = 300,
+            easing = mina.backout;
+
+          [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+            var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+              pathConfig = {
+                from : path.attr( 'd' ),
+                to : el.getAttribute( 'data-path-hover' )
+              };
+
+            el.addEventListener( 'mouseenter', function() {
+              path.animate( { 'path' : pathConfig.to }, speed, easing );
+            } );
+
+            el.addEventListener( 'mouseleave', function() {
+              path.animate( { 'path' : pathConfig.from }, speed, easing );
+            } );
+          } );
+        }
+
+        init();
+
+      })();
+    </script>
+
+    <!-- ======= About Section ======= -->
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static "images/b1.jpg" %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>"Education is not the learning of facts, but the training of mind to think."</h3>
+            <h3> - Albert Einstein </h3>
+            <p class="font-italic">
+              Welcome to PAPER FACTORY - " Exculsively for First Year : By First Year "
+            </p>
+            <p class="font-italic">
+              Platform where you are going to find every material realted to your subjects.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Papers for Midsems as well as Endsems.</li>
+              <li><i class="ri-check-double-line"></i> Books related to every Subject </li>
+              <li><i class="ri-check-double-line"></i> Important Notes of your Seniors </li>
+              <li><i class="ri-check-double-line"></i> Tutorial Sheets and Assignment Questions </li>
+              <li><i class="ri-check-double-line"></i> Lab Files and Manuals </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact </p>
+        </div>
+        <div>
+          <iframe style="border:0; width: 100%; height: 400px;" src="{% static "images/mnnit.jpg.png" %}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Paper Factory <span></span></h3>
+             <p>- Exclusively for First Year : By First Year </p><br>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <p>A paper site for:</p>
+              <p><a href="http://www.mnnit.ac.in/" target="_blank"><strong>MNNIT,Allahabad </strong></a></p>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <p><strong>Designed By :</strong></p>
+            <p>Vaibhav Agrawal</p>
+            <p><strong>Email:</strong> vaibhavagrawal093@gmail.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Paper Factory</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static "js/jquery.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "js/owl.carousel.min.js" %}" ></script>
+  <script src="{% static "js/counterup.min.js" %}"></script>
+  <script src="{% static "js/aos.js" %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static "js/main.js" %}"></script>
+
+</body>
+
+</html>
