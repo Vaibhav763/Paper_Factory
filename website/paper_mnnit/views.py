@@ -132,7 +132,7 @@ def eco_notes(request):
 def eco_pdfs(request):
     return render(request,'paper_mnnit/eco/eco_pdfs.html')
 def eco_assignments(request):
-    return render(request,'paper_mnnit/eco/eco_assignments.html')    
+    return render(request,'paper_mnnit/eco/eco_assignments.html')
 
 # eng
 def eng(request):
@@ -143,3 +143,20 @@ def eng_papers(request):
     return render(request,'paper_mnnit/eng/eng_papers.html')
 def eng_language(request):
     return render(request,'paper_mnnit/eng/eng_language.html')
+
+def feedbackbase(request):
+    if request.method == "POST":
+        name = request.POST.get("fname",'')
+        mail = request.POST.get("email", '')
+        feed = request.POST.get("Textarea", '')
+        print(name)
+        print(mail)
+        print(feed)
+        us = Review()
+        us.email = mail
+        us.name = name
+        us.feed = feed
+        us.save()
+
+        return redirect('accounts:feedback')
+    return redirect('accounts:home')

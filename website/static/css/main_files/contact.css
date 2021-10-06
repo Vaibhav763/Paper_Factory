@@ -1,0 +1,49 @@
+body {
+  color: #fff;
+  background-color: #212529;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pb-5, .py-5 {
+  background-color: #2a3034;
+}
+
+
+.lh-condensed {
+ line-height: 1.25;
+}
+
+
+ /* FOR PASSWORD CONFIRMATION MODAL*/
+
+.modal-content{
+  background-color: #131313;
+}
+
+
+/* FOR  PAGE BACKGROUND (JUMBOTRON)*/
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #0c0c0d;
+  border-radius: .0rem;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.jumbotron .container {
+  max-width: 60rem;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% extends "paper_mnnit/base.html" %}
+  {% block body_block %}
+  {% load static %}
+
+
+<link href = "{% static "css/main_files/contact.css" %}" rel = "stylesheet">
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Give Feedback to Paper Factory</h1>
+          <p>Let us know if you have ideas that can help to make the site better. If you need any kind of help or have doubts regarding academics feel free to contact . </p>
+        </div>
+      </section>
+    </main>
+
+      <div class="space50"></div>
+
+  <div class="container">
+    <div class="col-md-8 order-md-1">
+
+      <form class="needs-validation" method="POST" action="{% url 'accounts:feedbackbase' %}" novalidate> {% csrf_token %}
+
+          <div class="mb-3">
+        	  <p> How was your Experience !!</p>
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="fname" id="name" placeholder="Vaibhav_Agrawal" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your Name is required.
+            </div>
+          </div>
+
+        <div class="mb-3">
+          <label for="email">Email </label>
+          <input type="text" class="form-control" name="email" id="email" placeholder="vaibhavagrawal093@example.com" required>
+          <div class="invalid-feedback" style="width: 100%;">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+      <div class="mb-3">
+		    <label for="Textarea">Feedback</label>
+		    <textarea type="text" class="form-control" name="Textarea" id="Textarea" placeholder="Please enter your valuable Feedback Or Questions !!" required></textarea>
+		    <div class="invalid-feedback" style="width: 100%;">
+		      Please enter your valuable Feedback !!
+		    </div>
+		  </div>
+
+        <hr class="mb-4">
+         <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop" >
+          Send
+         </button>
+
+
+        <div class="modal " id="staticBackdrop" tabindex="-1" >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Successfull !</h5>
+              </div>
+              <div class="modal-body">
+                ThankYou for Valuable Feedback !
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </form>
+  </div>
+</div>
+
+ <div class="space50"></div>
+<script src="{% static "js/form-validation.js" %}"></script></body>
+
+{% endblock %}

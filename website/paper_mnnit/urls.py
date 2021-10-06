@@ -1,8 +1,9 @@
 from django.contrib import admin
-from django.urls import path
 from django.conf.urls import url
 from paper_mnnit import views
 from django.conf.urls import include
+from django.urls import path, re_path
+
 
 app_name = 'paper_mnnit'
 
@@ -74,4 +75,6 @@ urlpatterns = [
     url (r'^english_literature/$', views.eng_literature, name='eng_literature'),
     url (r'^english_papers/$', views.eng_papers, name='eng_papers'),
     url (r'^english_language/$', views.eng_language, name='eng_language'),
+
+    re_path(r'^feedbackbase/$', views.feedbackbase, name='feedbackbase'),
 ]
