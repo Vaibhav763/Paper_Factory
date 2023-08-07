@@ -25,7 +25,7 @@ your subjects .
 
 
 <h1> Impact </h1>
-Benefitting the students during Covid hard times with 100
+Benefitting the students of NIT Allahabad during Covid hard times with 100
 k+ clicks each month.
 
 <h1> Images </h1>
